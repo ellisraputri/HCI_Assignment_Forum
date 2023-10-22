@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutrition-LisHealth</title>
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Dosis' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="stylenutri.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="header">
+        <nav class="navbar">
+            <h1 class="logo">
+                <div class="lis">Lis</div><div class="health">Health</div>
+            </h1>
+        
+            <ul class="nav-links">
+              <input type="checkbox" id="checkbox_toggle" />
+              <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+
+              <div class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="nutrition.html">Nutrition</a></li>
+                <li><a href="fitness.html">Fitness</a></li>
+                <li><a href="#footer">Contact</a></li>
+              </div>
+            </ul>
+          </nav>
+
+    </div>
+
+    <div class="whitespace">
+    </div>
+
+    <div class="content">
+        <section>
+        <div class="carb">
+            <p class="head">Carbohydrate Calculator  <i class="fa-solid fa-bowl-rice"></i></p>
+
+            <p>The carbohydrate calculator will estimate the recommended percentage of carbohydrate intake each day</p>
+            <div class="info">
+                <label for="age1">Age: 
+                <input type="number" id="age1" required></label>
+            </div>
+
+            <div class="info">
+                <label for="gender1">Gender: 
+                <select id="gender1" required>
+                    <option value="">Select an option</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select> 
+                </label>
+            </div>
+                    
+            <div class="info">
+                <label for="weight1">Weight (in kg): 
+                <input type="number" id="weight1" required></label>
+            </div>
+            
+            <div class="info">
+                <label for="height1">Height (in cm): 
+                <input type="number" id="height1" required></label> 
+            </div>
+                <button type="submit" onclick="submit1()">Submit</button>
+        </div>
+        </section>
+        
+        <section>
+        <div class="protein">
+            <p class="head">Protein Calculator  <i class="fa-solid fa-egg"></i></p>
+            <p>The protein calculator will estimate the recommended percentage of protein intake each day</p>
+            <div class="info">
+                <label for="age2">Age: 
+                <input type="number" id="age2" required></label>
+            </div>
+
+            <div class="info">
+                <label for="gender2">Gender: 
+                <select id="gender2" required>
+                    <option value="">Select an option</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select> 
+                </label>
+            </div>
+                    
+            <div class="info">
+                <label for="weight2">Weight (in kg): 
+                <input type="number" id="weight2" required></label>
+            </div>
+            
+            <div class="info">
+                <label for="height2">Height (in cm): 
+                <input type="number" id="height2" required></label> 
+            </div>
+                <button type="submit" onclick="submit2()">Submit</button>
+        </div>
+        </section>
+
+        <section>
+        <div class="calories">
+            <p class="head">Calorie Calculator  <i class="fa-solid fa-utensils"></i></p>
+            <p>The calorie calculator will estimate the recommended percentage of calorie intake each day</p>
+            <div class="info">
+                <label for="age3">Age: 
+                <input type="number" id="age3" required></label>
+            </div>
+
+            <div class="info">
+                <label for="gender3">Gender: 
+                <select id="gender3" required>
+                    <option value="">Select an option</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select> 
+                </label>
+            </div>
+                    
+            <div class="info">
+                <label for="weight3">Weight (in kg): 
+                <input type="number" id="weight3" required></label>
+            </div>
+            
+            <div class="info">
+                <label for="height3">Height (in cm): 
+                <input type="number" id="height3" required></label> 
+            </div>
+                <button type="submit" onclick="submit3()">Submit</button>
+        </div>
+        </section>
+
+        <section>
+            <div class="recipe">
+                <p class="head">Recipes  <i class="fa-solid fa-book-open"></i></p>
+                <p>Learn healthy recipe from clicking the websites below!</p>
+                <div class="image-recipe1">
+                    <a href="https://www.delicious.com.au/recipes/collections/gallery/60-healthy-dinners-you-can-cook-in-30-minutes/1vo4q819?page=5" 
+                    > <div class="image1"><img src="image1.jpg" alt="fast and easy recipes"></div>
+                    <div class="centered1">
+                        <div class="text">Fast and Easy</div>
+                    </div></a>
+                </div>
+
+                
+                <div class="image-recipe2">
+                    <a href="https://www.bbcgoodfood.com/recipes/collection/low-carbohydrate-recipes" 
+                    ><div class="image2"><img src="image2.jpg" alt="low-carb recipes"></div>
+                    <div class="centered2">
+                        <div class="text">Low-Carb</div>
+                    </div></a>
+                </div>
+
+                <div class="image-recipe3">
+                    <a href="https://www.eatingwell.com/recipes/18045/weight-loss-diet/" 
+                    ><div class="image3"><img src="image3.jpg" alt="weight-loss recipes"></div>
+                    <div class="centered3">
+                        <div class="text">Weight-Loss</div>
+                    </div></a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="footer" id="footer">
+        <h1 class="textfoot">
+            Contact Us!
+        </h1>
+    
+        <div class="contact">
+            <ul>
+            <li><a href="https://www.linkedin.com/in/ellis-raputri-826a78203/"><i class="fa-brands fa-linkedin-in"></i>Ellis Raputri</a></li>
+            <li><i class="fa-solid fa-envelope"></i>ellisraputri@gmail.com</li>
+            <li><a href="https://wa.me/62895385069010"><i class="fa-brands fa-whatsapp"></i>0895-3850-69010</a></li>
+            </ul>
+        </div>
+    </div>
+
+<script>
+    function submit1(){
+        let x = document.getElementById("age1").value;
+        let a = document.getElementById("gender1").value;
+        let b = document.getElementById("weight1").value;
+        let c = document.getElementById("height1").value;
+
+        if(x!='' && a!='' && b!='' && c!=''){
+            alert("Thank you for submitting.");
+            location.reload();
+        }
+        else{
+            alert("Please fill all of the required input.")
+        }
+        
+    }
+
+    function submit2(){
+        let x = document.getElementById("age2").value;
+        let a = document.getElementById("gender2").value;
+        let b = document.getElementById("weight2").value;
+        let c = document.getElementById("height2").value;
+
+        if(x!='' && a!='' && b!='' && c!=''){
+            alert("Thank you for submitting.");
+            location.reload();
+        }
+        else{
+            alert("Please fill all of the required input.")
+        }
+        
+    }
+
+    function submit3(){
+        let x = document.getElementById("age3").value;
+        let a = document.getElementById("gender3").value;
+        let b = document.getElementById("weight3").value;
+        let c = document.getElementById("height3").value;
+
+        if(x!='' && a!='' && b!='' && c!=''){
+            alert("Thank you for submitting.");
+            location.reload();
+        }
+        else{
+            alert("Please fill all of the required input.")
+        }
+        
+    }
+</script>
+
+</body>
+</html>
