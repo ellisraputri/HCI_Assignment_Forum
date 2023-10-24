@@ -460,7 +460,7 @@ section {
     .footer{
         font-size: 10px;
         height:140px;
-        margin-top: 2300px;
+        margin-top: 2500px;
     }
     .textfoot{
         font-size:16px;
@@ -483,7 +483,7 @@ section {
 @media screen and (max-width:323px){
     .footer{
         height:110px;
-        margin-top: 2700px;
+        margin-top: 2800px;
     }
     .image-recipe1 img, .image-recipe2 img, .image-recipe3 img{
         width:140px;
